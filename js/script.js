@@ -1,4 +1,4 @@
-
+// Version 1 
 function generarNumeroAleatorio() {
     return Math.floor(Math.random() * 256);
 }
