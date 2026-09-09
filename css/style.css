@@ -39,6 +39,20 @@ nav a:hover {
     color: #f0a500;
 }
 
+nav button#chaosButton {
+    background-color: #f0a500;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button#chaosButton:hover {
+    background-color: #ffbf33;
+}
+
 .main-content {
     flex: 1;
 
