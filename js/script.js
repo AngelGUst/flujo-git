@@ -21,6 +21,20 @@ const nivel = document.getElementById("nivel");
 const nivelTexto = document.getElementById("nivelTexto");
 
 const resultado = document.getElementById("resultado");
+const historial = document.getElementById("historial");
+
+// Crea un <li> con el resumen del envío y lo agrega al historial
+function agregarAlHistorial(nombre, animal) {
+    const item = document.createElement("li");
+    item.textContent = `${nombre} votó por: ${animal}`;
+    historial.appendChild(item);
+}
+
+// Modifica el título principal para reflejar el total de envíos
+function actualizarTitulo() {
+    const titulo = document.querySelector(".container h1");
+    titulo.textContent = `Formulario Totalmente Innecesario (${historial.children.length} envíos)`;
+}
 
 nivel.addEventListener("input", function () {
     nivelTexto.textContent = nivel.value + "%";
@@ -68,5 +82,8 @@ formulario.addEventListener("submit", function (event) {
             hemos determinado que esta información no sirve para nada.
         </p>
     `;
+
+    agregarAlHistorial(nombre, animal);
+    actualizarTitulo();
 });
 
