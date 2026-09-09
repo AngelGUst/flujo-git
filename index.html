@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navegación Misión 1</title>
-    <style>
-        nav { background-color: #333; padding: 1rem; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #f0a500; }
-    </style>
+    <title>Página con Botón del Caos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -19,5 +15,15 @@
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>¡Bienvenido!</h1>
+            <p>Haz clic en el botón para desatar colores aleatorios.</p>
+            <button id="chaosButton">¡Botón del Caos!</button>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
