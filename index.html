@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Innecesario de Axel </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+            <li><a href="#resultado">Resultado</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><button id="chaosButton">¡Botón del Caos!</button></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+
+            <h1>Formulario Totalmente Innecesario</h1>
+            <p>Responde preguntas que no sirven absolutamente para nada.</p>
+
+            <form id="formularioInnecesario">
+
+                <label for="nombre">
+                    Nombre de superhéroe:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ejemplo: Capitán Tortilla"
+                    required
+                >
+
+                <label for="animal">
+                    ¿Qué animal debería gobernar el mundo?
+                </label>
+
+                <select id="animal">
+                    <option value="Capibara">Capibara</option>
+                    <option value="Ajolote">Ajolote</option>
+                    <option value="Pingüino">Pingüino</option>
+                    <option value="Gallina">Gallina</option>
+                    <option value="Ornitorrinco">Ornitorrinco</option>
+                </select>
+
+                <label for="color">
+                    Color oficial de tu imperio:
+                </label>
+
+                <input type="color" id="color">
+
+                <label for="nivel">
+                    ¿Qué tan preparado estás para una invasión de patos?
+                </label>
+
+                <input
+                    type="range"
+                    id="nivel"
+                    min="0"
+                    max="100"
+                    value="50"
+                >
+
+                <span id="nivelTexto">50%</span>
+
+                <label for="excusa">
+                    Tu mejor excusa para no conquistar el mundo:
+                </label>
+
+                <textarea
+                    id="excusa"
+                    rows="4"
+                    placeholder="Escribe una excusa completamente válida..."
+                ></textarea>
+
+                <div class="checkbox-container">
+
+                    <input type="checkbox" id="terminos" required>
+
+                    <label for="terminos">
+                        Confirmo que toda esta información es completamente inútil.
+                    </label>
+
+                </div>
+
+                <button type="submit" id="enviarButton">
+                    Enviar información inútil
+                </button>
+
+            </form>
+
+            <div id="resultado"></div>
+
+            <ul id="historial"></ul>
+
+        </div>
+
+        <section id="servicios" class="servicios-section">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web modernos, rápidos y adaptados a las necesidades de tu negocio.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño UI/UX</h3>
+                    <p>Diseñamos interfaces intuitivas y atractivas para mejorar la experiencia del usuario.</p>
+                </div>
+                <div class="card">
+                    <h3>Marketing Digital</h3>
+                    <p>Estrategias digitales efectivas para aumentar tu visibilidad y alcance en línea.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultoría SEO</h3>
+                    <p>Optimizamos tu presencia web para destacar en los principales motores de búsqueda.</p>
+                </div>
+                <div class="card">
+                    <h3>Soporte Técnico</h3>
+                    <p>Asistencia rápida y confiable para mantener tus sistemas funcionando al 100%.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```
